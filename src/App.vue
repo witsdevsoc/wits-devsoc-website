@@ -111,7 +111,7 @@
 
     <section :style="{ background: finalhome }" id="final">
       <div>
-        <h4 id="fin1">Have questions? Email us at witsdevsoc@gmail.com</h4>
+        <h4 id="fin1">Have questions? Email us at <a :href="'mailto:witsdevsoc@gmail.com?cc=' + encodeURIComponent('mhbangie@gmail.com') + '&subject=' + encodeURIComponent('Enquiry') + '&body=' + encodeURIComponent('Hi there,')" >witsdevsoc@gmail.com</a></h4>
       </div>
       <a id="backtatop" v-on:click="goToTopOfPage()"> <i class="fa fa-arrow-up" aria-hidden="true"></i></a>
 
