@@ -961,6 +961,75 @@ export default {
                 },
 
             ],
+
+
+            y2024: [
+            {
+              id: 1,
+              name: 'Keren',
+              team: 'Head of Society',
+              image: require('../assets/images/blog-4.png'),
+              linkedin: 'https://za.linkedin.com/',
+            },
+            {
+              id: 2,
+              name: 'Memeber 2',
+              team: 'Corporate Partnerships Team',
+              image: require('../assets/images/blog-4.png'),
+              linkedin: 'https://za.linkedin.com/',
+            },
+            {
+              id: 3,
+              name: 'Memeber 3',
+              team: 'Social Media Team',
+              image: require('../assets/images/blog-4.png'),
+              linkedin: 'https://za.linkedin.com/',
+            },
+            {
+              id: 4,
+              name: 'Memeber 4',
+              team: 'Developer Team',
+              image: require('../assets/images/blog-4.png'),
+              linkedin: 'https://za.linkedin.com/',
+            },
+            
+            
+            {
+              id: 5,
+              name: 'Memeber 5',
+              team: 'Corporate Partnerships Team',
+              image: require('../assets/images/blog-4.png'),
+              linkedin: 'https://za.linkedin.com/',
+            },
+
+            {
+              id: 6,
+              name: 'Memeber 6',
+              team: 'Developer Team',
+              image: require('../assets/images/blog-4.png'),
+              linkedin: 'https://za.linkedin.com/',
+            },
+            {
+              id: 7,
+              name: 'Memeber 7',
+              team: 'Social Media Team',
+              image: require('../assets/images/blog-4.png'),
+              linkedin: 'https://za.linkedin.com/',
+            },
+            {
+              id: 8,
+              name: 'Memeber ',
+              team: 'Writing Team',
+              image: require('../assets/images/blog-4.png'),
+              linkedin: 'https://za.linkedin.com/',
+            },
+            
+            ],
+
+
+
+
+            
             profiles: [],
         }
     },
@@ -981,10 +1050,13 @@ export default {
             else if (str == '2022') {
                 this.profiles = this.y2022;
             }
+            else if(str == '2024'){
+                this.profiles = this.y2024
+            }
         }
     },
     mounted() {
-        this.profiles = this.y2023;
+        this.profiles = this.y2024;
 
 
         const sections = document.querySelectorAll('.sectionnn');
