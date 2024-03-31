@@ -4,69 +4,118 @@
 
   <section id="navmen" v-if="navvis">
     <div id="nmback">
-      <div id="nmcanc"><i v-on:click="revealnav" class="fa-solid fa-xmark"></i></div>
+      <div id="nmcanc">
+        <i v-on:click="revealnav" class="fa-solid fa-xmark"></i>
+      </div>
       <div id="cent">
         <h2>Navigation Menu</h2>
 
-
-
         <div id="horizs">
-
           <div class="blogopts">
-            <router-link class="navtit" :to="{ name: 'Home' }" v-on:click="revealnav(); sethome();">
+            <router-link
+              class="navtit"
+              :to="{ name: 'Home' }"
+              v-on:click="
+                revealnav();
+                sethome();
+              "
+            >
               <h3>Home</h3>
             </router-link>
-            <hr>
-            <router-link :to="{ name: 'Home', hash: '#activities' }" v-on:click="revealnav(); sethome();">
+            <hr />
+            <router-link
+              :to="{ name: 'Home', hash: '#activities' }"
+              v-on:click="
+                revealnav();
+                sethome();
+              "
+            >
               <h4 class="topboth4">Activities</h4>
             </router-link>
-            <router-link :to="{ name: 'Home', hash: '#workshops' }" v-on:click="revealnav(); sethome();">
+            <router-link
+              :to="{ name: 'Home', hash: '#workshops' }"
+              v-on:click="
+                revealnav();
+                sethome();
+              "
+            >
               <h4 class="topboth4">Workshops</h4>
             </router-link>
 
-            <router-link :to="{ name: 'about-us', hash: '#about-us' }" v-on:click="revealnav(); sethome();">
+            <router-link
+              :to="{ name: 'about-us', hash: '#about-us' }"
+              v-on:click="
+                revealnav();
+                sethome();
+              "
+            >
               <h4 class="topboth4">About Us</h4>
             </router-link>
 
-            <router-link :to="{ name: 'faqs' }" v-on:click="revealnav(); setaway();">
+            <router-link
+              :to="{ name: 'faqs' }"
+              v-on:click="
+                revealnav();
+                setaway();
+              "
+            >
               <h4 class="topboth4">FAQs</h4>
             </router-link>
-            <hr>
+            <hr />
           </div>
 
           <div class="blogopts">
-            <router-link :to="{ name: 'blogs' }" v-on:click="revealnav(); setaway();" class="navtit">
+            <router-link
+              :to="{ name: 'blogs' }"
+              v-on:click="
+                revealnav();
+                setaway();
+              "
+              class="navtit"
+            >
               <h3>Blog</h3>
             </router-link>
-            <hr>
-            <router-link v-on:click="revealnav(); setaway();" :to="{ name: 'blogs', hash: '#Events' }">
+            <hr />
+            <router-link
+              v-on:click="
+                revealnav();
+                setaway();
+              "
+              :to="{ name: 'blogs', hash: '#Events' }"
+            >
               <h4 class="topboth4">Events</h4>
             </router-link>
-            <router-link v-on:click="revealnav(); setaway();" :to="{ name: 'blogs', hash: '#Workshops' }">
+            <router-link
+              v-on:click="
+                revealnav();
+                setaway();
+              "
+              :to="{ name: 'blogs', hash: '#Workshops' }"
+            >
               <h4 class="topboth4">Workshops</h4>
             </router-link>
-            <router-link v-on:click="revealnav(); setaway();" :to="{ name: 'blogs', hash: '#Tech Talks' }">
+            <router-link
+              v-on:click="
+                revealnav();
+                setaway();
+              "
+              :to="{ name: 'blogs', hash: '#Tech Talks' }"
+            >
               <h4 class="topboth4">Tech Talks</h4>
             </router-link>
-            <hr>
-
+            <hr />
           </div>
         </div>
-        <hr>
+        <hr />
       </div>
     </div>
   </section>
 
-
-  <header id="navicon"><a v-on:click="revealnav"> <ion-icon name="menu-outline"></ion-icon></a></header>
-
-
-
-
+  <header id="navicon">
+    <a v-on:click="revealnav"> <ion-icon name="menu-outline"></ion-icon></a>
+  </header>
 
   <router-view></router-view>
-
-
 
   <div id="bllack">
     <section id="footer" class="sectionnn">
@@ -76,23 +125,32 @@
         </div>
 
         <div id="subhe">
-          <h4>Drop by any of our social media outlets to learn more about us, keep up-to-date with our upcoming
-            events, or to chat with our members!</h4>
+          <h4>
+            Drop by any of our social media outlets to learn more about us, keep
+            up-to-date with our upcoming events, or to chat with our members!
+          </h4>
         </div>
 
         <div class="social">
-          <a class="socials" href="https://www.facebook.com/witsdevsoc/"><img src="./assets/facebook.png" alt=""></a>
-          <a class="socials" href="https://www.instagram.com/witsdevsoc/?utm_medium=copy_link"><img
-              src="./assets/instagram.png" alt=""></a>
-          <a class="socials" href="https://www.linkedin.com/company/wits-developer-society"><img
-              src="./assets/linkedin.png" alt=""></a>
+          <a class="socials" href="https://www.facebook.com/witsdevsoc/"
+            ><img src="./assets/facebook.png" alt=""
+          /></a>
+          <a
+            class="socials"
+            href="https://www.instagram.com/witsdevsoc/?utm_medium=copy_link"
+            ><img src="./assets/instagram.png" alt=""
+          /></a>
+          <a
+            class="socials"
+            href="https://www.linkedin.com/company/wits-developer-society"
+            ><img src="./assets/linkedin.png" alt=""
+          /></a>
           <a class="socials" href="https://discord.gg/QjphB5N6NC">
             <!-- <div>
                     <div><img src="./assets/discord.png" alt=""></div>
                   </div> -->
-            <img src="./assets/meep.png" alt="">
+            <img src="./assets/meep.png" alt="" />
           </a>
-
         </div>
 
         <div class="he">
@@ -100,7 +158,9 @@
         </div>
 
         <div id="subheaa">
-          <h5>Get involved in upcoming events and show us what you are made of!</h5>
+          <h5>
+            Get involved in upcoming events and show us what you are made of!
+          </h5>
         </div>
 
         <a id="reg" href="https://forms.gle/s8GqEzWKSHmucDZw6">
@@ -111,10 +171,17 @@
 
     <section :style="{ background: finalhome }" id="final">
       <div>
-        <h4 id="fin1">Have questions? Email us at witsdevsoc@gmail.com</h4>
+        <h4 id="fin1">
+          Have questions? Email us at
+          <a
+            href="mailto:witsdevsoc@gmail.com?subject=Enquiry&body=Hey, I'd like to ask about..."
+            >witsdevsoc@gmail.com</a
+          >
+        </h4>
       </div>
-      <a id="backtatop" v-on:click="goToTopOfPage()"> <i class="fa fa-arrow-up" aria-hidden="true"></i></a>
-
+      <a id="backtatop" v-on:click="goToTopOfPage()">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i
+      ></a>
     </section>
   </div>
 
@@ -122,35 +189,31 @@
 </template>
 
 <script>
-
 // import HelloWorld from './components/HelloWorld.vue'
 // import BlogPage from './components/BlogPage.vue';
 // import BlogPost from './components/BlogPost.vue';
 // import aboutus from './components/aboutus.vue';
 
-
 export default {
-
-  name: 'App',
+  name: "App",
   data() {
     return {
       navvis: false,
-      finalhome: '#252542',
-    }
+      finalhome: "#252542",
+    };
   },
   mounted() {
-
     // });
 
-    const sections = document.querySelectorAll('.sectionnn');
+    const sections = document.querySelectorAll(".sectionnn");
     const animateSections = () => {
       sections.forEach((section) => {
         const rect = section.getBoundingClientRect();
         const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
         if (isVisible) {
-          section.classList.add('animate');
+          section.classList.add("animate");
         } else {
-          section.classList.remove('animate');
+          section.classList.remove("animate");
         }
       });
     };
@@ -160,7 +223,7 @@ export default {
 
     // Throttle the scroll event to improve performance
     let isScrolling = false;
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
       if (!isScrolling) {
         window.requestAnimationFrame(() => {
           animateSections();
@@ -169,19 +232,18 @@ export default {
         isScrolling = true;
       }
     });
-
   },
   methods: {
     sethome() {
-      this.finalhome = '#252542';
+      this.finalhome = "#252542";
     },
     setaway() {
-      this.finalhome = '#171729';
+      this.finalhome = "#171729";
     },
     goToTopOfPage() {
       window.scrollTo({
         top: 0,
-        behavior: "smooth" // Use "auto" for instant scroll, "smooth" for smooth scroll
+        behavior: "smooth", // Use "auto" for instant scroll, "smooth" for smooth scroll
       });
     },
     revealnav() {
@@ -192,51 +254,47 @@ export default {
       // }
       // alert("done")
 
-
       if (!this.navvis) {
-        document.body.style.overflow = 'auto';
+        document.body.style.overflow = "auto";
         this.$nextTick(() => {
           if (window.location.hash) {
             setTimeout(() => {
-              const element = document.getElementById(window.location.hash.slice(1));
+              const element = document.getElementById(
+                window.location.hash.slice(1)
+              );
               if (element) {
-
-                element.scrollIntoView({ behavior: 'smooth' });
-
+                element.scrollIntoView({ behavior: "smooth" });
               }
             }, 10); // Delay of 1000 milliseconds (1 second)
-          }
-          else {
+          } else {
             // Scroll to the top of the page
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            window.scrollTo({ top: 0, behavior: "smooth" });
           }
         });
       } else {
-        document.body.style.overflow = 'hidden';
+        document.body.style.overflow = "hidden";
       }
-
-
     },
-  }
+  },
   // components: {
   //   // HelloWorld,
   //   // BlogPage,
   //   // BlogPost
 
   // }
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Poppins', sans-serif, Avenir, Helvetica, Arial;
+  font-family: "Poppins", sans-serif, Avenir, Helvetica, Arial;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #fff;
 }
 
-#backtatop:hover{
+#backtatop:hover {
   cursor: pointer;
   transform: translateY(-0.1rem);
 }
@@ -256,7 +314,6 @@ export default {
   transform: translateY(0);
 }
 
-
 #nmcanc i {
   transform: scale(1.4);
   color: white;
@@ -268,9 +325,8 @@ export default {
 }
 
 .navtit h3 {
-  color: #5CAFF9;
+  color: #5caff9;
 }
-
 
 .topboth4 {
   font-size: 1.4rem;
@@ -296,14 +352,14 @@ export default {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
   text-align: center;
   height: fit-content;
 }
 
 #cent a {
-  color: #FFF;
+  color: #fff;
 }
 
 #navmen {
@@ -313,7 +369,7 @@ export default {
   display: flex;
   justify-content: end;
   align-items: center;
-  background-color: rgba(23, 23, 41, 0.50);
+  background-color: rgba(23, 23, 41, 0.5);
   backdrop-filter: blur(0.2rem);
   -webkit-backdrop-filter: blur(0.2rem);
   position: fixed;
@@ -332,7 +388,6 @@ export default {
   }
 }
 
-
 #nmback {
   height: 100%;
   display: flex;
@@ -345,7 +400,7 @@ export default {
   padding-bottom: 4.5rem;
   border-radius: 1.66667rem;
   background: #171729;
-  animation: translateinfromright .4s linear;
+  animation: translateinfromright 0.4s linear;
 }
 
 @keyframes translateinfromright {
@@ -385,12 +440,12 @@ export default {
 
 #navicon a ion-icon {
   width: 100%;
-  color: #FFF;
+  color: #fff;
   height: 100%;
 }
 
 #navicon a ion-icon:hover {
-  color: #5CAFF9;
+  color: #5caff9;
 }
 
 * {
@@ -407,7 +462,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 #footer {
   width: 100%;
   height: fit-content;
@@ -417,7 +471,6 @@ html {
   justify-content: center;
   padding: 4rem 0rem;
   align-items: center;
-
 }
 
 .footcont {
@@ -444,11 +497,10 @@ html {
 }
 
 .he h1 {
-  color: #5CAFF9;
+  color: #5caff9;
   font-size: 2rem;
   font-weight: 700;
 }
-
 
 #subhe {
   display: flex;
@@ -466,8 +518,7 @@ html {
 
 #subhe h4 {
   font-weight: 600;
-  color: #FFF;
-
+  color: #fff;
 }
 
 .social {
@@ -480,9 +531,8 @@ html {
   width: 2.66667rem;
   height: 2.66667rem;
   border-radius: 0.27778rem;
-  background: #FFF;
+  background: #fff;
 }
-
 
 .socials div {
   display: flex;
@@ -500,13 +550,12 @@ html {
   width: 1.5rem;
   margin-top: 0rem;
   height: 1.5rem;
-
 }
 
 .socials div div {
   width: 2.22222rem;
   height: 2.22222rem;
-  background: #172D4E;
+  background: #172d4e;
   border-radius: 0.27778rem;
 }
 
@@ -522,7 +571,7 @@ html {
 }
 
 #subheaa h5 {
-  color: #FFF;
+  color: #fff;
   font-size: 1.11111rem;
   font-weight: 600;
   text-align: start;
@@ -531,7 +580,7 @@ html {
 .socials {
   width: 4.77778rem;
   height: 4.77778rem;
-  background-color: #172D4E;
+  background-color: #172d4e;
   border-radius: 1.11rem;
   display: flex;
   margin-right: 1.36rem;
@@ -552,7 +601,6 @@ html {
 }
 
 #fin1 {
-
   /* letter-spacing: 0.124rem; */
   font-size: 1.2rem;
   font-weight: 600;
@@ -570,13 +618,13 @@ html {
 }
 
 #backtatop i {
-  color: #FFF;
+  color: #fff;
 }
 
 #final {
   height: 5.78rem;
   display: flex;
-  color: #FFF;
+  color: #fff;
   padding: 0rem 2.89rem;
   flex-direction: row;
   justify-content: end;
@@ -596,8 +644,8 @@ html {
   height: 3.72222rem;
   border-radius: 1.11111rem;
   text-decoration: none;
-  color: #FFF;
-  background: #5CAFF9;
+  color: #fff;
+  background: #5caff9;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -615,13 +663,10 @@ html {
   background-color: white;
 }
 
-
-
 .socials:hover {
   transform: translateY(-0.2rem);
   cursor: pointer;
 }
-
 
 @media (min-width: 1600px) {
   #subhe {
@@ -632,9 +677,7 @@ html {
 @media (max-width: 1215px) {
   #subhe h4 {
     font-size: 1.02rem;
-
   }
-
 
   #fin1,
   #fin2 {
@@ -642,13 +685,11 @@ html {
   }
 
   #subheaa h5 {
-
     font-size: 0.9rem;
   }
 }
 
 @media (max-width: 788px) {
-
   .footcont {
     width: 90%;
     margin-right: 2rem;
@@ -656,11 +697,7 @@ html {
     margin-left: 2rem;
   }
 
-
-
-
   #subheaa h5 {
-
     font-size: 0.8rem;
     /* width: 100%; */
   }
@@ -670,17 +707,14 @@ html {
     height: 1.7rem;
   }
 
-
   .socials div div img {
     width: 1.2rem;
     height: 1.2rem;
-
   }
 
   .socials div div {
     width: 1.6rem;
     height: 1.6rem;
-
   }
 
   .socials {
@@ -688,7 +722,6 @@ html {
     height: 3.5rem;
 
     margin-right: 1.36rem;
-
   }
 
   .socials img {
@@ -703,23 +736,17 @@ html {
     height: 3.5rem;
   }
 
-
   #fin1,
   #fin2 {
     font-size: 0.8rem;
   }
 
-
-
-
   #regh4 {
     font-size: 1rem;
   }
 
-
   #subhe h4 {
     font-size: 0.8rem;
-
   }
 
   .he h1 {
@@ -733,16 +760,12 @@ html {
     /* margin-top: 6rem; */
   }
 
-
   #subheaa h5 {
-
     font-size: 0.75rem;
   }
 
-
   #subhe h4 {
     font-size: 0.75rem;
-
   }
 
   #final {
@@ -759,23 +782,14 @@ html {
     height: 1.2rem;
   }
 
-
-
-
-
-
-
-
   .socials div div img {
     width: 0.9rem;
     height: 0.9rem;
-
   }
 
   .socials div div {
     width: 0.8rem;
     height: 0.8rem;
-
   }
 
   .socials {
@@ -783,7 +797,6 @@ html {
     height: 2.5rem;
     border-radius: 0.8rem;
     margin-right: 1rem;
-
   }
 
   .socials img {
@@ -797,27 +810,22 @@ html {
     height: 3rem;
   }
 
-
   #fin1,
   #fin2 {
     font-size: 0.5rem;
   }
 
-
   #regh4 {
     font-size: 0.8rem;
   }
-
 
   #subhe {
     margin-bottom: 1rem;
   }
 
-
   .he {
     margin-bottom: 0rem;
   }
-
 
   .he h1 {
     font-size: 1.4rem;
