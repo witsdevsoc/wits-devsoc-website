@@ -50,150 +50,44 @@
                     </div>
                 </div>
             </div>
-            <section id="partners" class="sectionnn">
 
-<div id="parthead">
-  <h1>Our Collaborators</h1>
-</div>
-
-<div class="swiper mySwiper" id="swip">
-              <div class="swiper-wrapper sectionnn">
-
-                <div class="swiper-slide">
-                  <div id="bbdpad" class="partcontainer">
-
-
-                    <img src="../assets/partners/bbd.jpg" alt="">
-
-
-                    <a class="models"
-                      href="https://bbdsoftware.com/services/software-development/?utm_source=google+search&utm_medium=cpc&utm_campaign=19744285142&utm_content=144879029925&utm_term=bbd%20software&gclid=CjwKCAjw-7OlBhB8EiwAnoOEk_PwM3BDZZTWA82g4cJEgec16t60oLo3yOdpQVTAsBaGK9U3Sf2-CBoCLqAQAvD_BwE">
-
-
-                      <h1>BBD</h1>
-
-
-                      <div class="spa">
+            <div v-for="Partners in partners" :key="Partners.id" class="partcontainer sectionnn">
+                <img :src="Partners.image" alt="">
+                <a class="models" :href="Partners.link">
+                    <h1>{{ Partners.name }}</h1>
+                    <div class="spa">
                         <div class="viewsite">
-                          <h4>View site</h4>
-                          <div>
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                          </div>
+                            <h4>View site</h4>
+                            <div>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </div>
                         </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                
-                <div class="swiper-slide">
-                  <div id="bbdpad" class="partcontainer">
+                    </div>
+                </a>
+            </div>    
 
 
-                    <img src="../assets/partners/bbd.jpg" alt="">
 
 
-                    <a class="models"
-                      href="https://bbdsoftware.com/services/software-development/?utm_source=google+search&utm_medium=cpc&utm_campaign=19744285142&utm_content=144879029925&utm_term=bbd%20software&gclid=CjwKCAjw-7OlBhB8EiwAnoOEk_PwM3BDZZTWA82g4cJEgec16t60oLo3yOdpQVTAsBaGK9U3Sf2-CBoCLqAQAvD_BwE">
 
 
-                      <h1>BBD</h1>
+          </section>
+
+        <div>
+           <partnersSection />
+        </div>
 
 
-                      <div class="spa">
-                        <div class="viewsite">
-                          <h4>View site</h4>
-                          <div>
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                
-                <div class="swiper-slide">
-                  <div id="bbdpad" class="partcontainer">
 
+        <!-- <div class="swiper mySwiper" id="swip">
+    <div class="swiper-wrapper sectionnn"> -->
+      <!-- Your swiper slides here -->
+    <!-- </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div> -->
 
-                    <img src="../assets/partners/bbd.jpg" alt="">
-
-
-                    <a class="models"
-                      href="https://bbdsoftware.com/services/software-development/?utm_source=google+search&utm_medium=cpc&utm_campaign=19744285142&utm_content=144879029925&utm_term=bbd%20software&gclid=CjwKCAjw-7OlBhB8EiwAnoOEk_PwM3BDZZTWA82g4cJEgec16t60oLo3yOdpQVTAsBaGK9U3Sf2-CBoCLqAQAvD_BwE">
-
-
-                      <h1>BBD</h1>
-
-
-                      <div class="spa">
-                        <div class="viewsite">
-                          <h4>View site</h4>
-                          <div>
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                
-                <div class="swiper-slide">
-                  <div id="bbdpad" class="partcontainer">
-
-
-                    <img src="../assets/partners/bbd.jpg" alt="">
-
-
-                    <a class="models"
-                      href="https://bbdsoftware.com/services/software-development/?utm_source=google+search&utm_medium=cpc&utm_campaign=19744285142&utm_content=144879029925&utm_term=bbd%20software&gclid=CjwKCAjw-7OlBhB8EiwAnoOEk_PwM3BDZZTWA82g4cJEgec16t60oLo3yOdpQVTAsBaGK9U3Sf2-CBoCLqAQAvD_BwE">
-
-
-                      <h1>BBD</h1>
-
-
-                      <div class="spa">
-                        <div class="viewsite">
-                          <h4>View site</h4>
-                          <div>
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="partcontainer">
-
-
-                    <img src="../assets/partners/psyb.jpg" alt="">
-
-
-                    <a class="models" href="https://psybergate.co.za/">
-
-
-                      <h1>Psybergate</h1>
-
-
-                      <div class="spa">
-                        <div class="viewsite">
-                          <h4>View site</h4>
-                          <div>
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-
-              </div>
-              <!-- <div class="swiper-button-next" ></div>
-              <div class="swiper-button-prev"></div> -->
-              <!-- <div class="swiper-pagination"></div> -->
-            </div></section>
-        </section>
 
 
     </body>
@@ -370,7 +264,7 @@ h6 {
 }
 
 
-#parthead {
+/* #parthead {
   display: flex;
   width: 100%;
   height: 4.66667rem;
@@ -378,8 +272,8 @@ h6 {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  /* padding-bottom: 5.5rem; */
-}
+  
+} */
 
 .partcontainer {
   width: 19.11111rem;
@@ -430,7 +324,7 @@ h6 {
   height: 100%;
 }
 
-
+/* 
 #parthead h1 {
   color: #5CAFF9;
   text-align: center;
@@ -438,7 +332,7 @@ h6 {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-}
+} */
 
 
 .partcontainer:hover .models {
@@ -625,11 +519,11 @@ h6 {
 
 
 
-.sectionnn {
+/* .sectionnn {
     opacity: 0;
     transform: translateY(5rem);
     transition: opacity 0.5s ease, transform 0.5s ease;
-}
+} */
 .head1 {
   color: #5CAFF9;
   text-align: center;
@@ -639,10 +533,10 @@ h6 {
   font-weight: 700;
   line-height: normal;
 }
-.sectionnn.animate {
+/* .sectionnn.animate {
     opacity: 1;
     transform: translateY(0);
-}
+} */
 
 
 #namey,
@@ -724,7 +618,7 @@ h6 {
 <script>
 
 import Swiper from 'swiper';
-
+import partnersSection from './partners.vue';
 export default {
     name: 'about-us',
     data() {
@@ -961,34 +855,32 @@ export default {
                 },
 
             ],
-
-
             y2024: [
             {
               id: 1,
-              name: 'Keren',
+              name: 'Keren Chetty',
               team: 'Head of Society',
-              image: require('../assets/images/blog-4.png'),
+              image: require('../assets/members/Keren.jpeg'),
               linkedin: 'https://za.linkedin.com/',
             },
             {
               id: 2,
-              name: 'Memeber 2',
-              team: 'Corporate Partnerships Team',
-              image: require('../assets/images/blog-4.png'),
+              name: 'Mohammed Huzaifah',
+              team: 'Developers Team',
+              image: require('../assets/members/Mohammed-Huzaifah.jpg'),
               linkedin: 'https://za.linkedin.com/',
             },
             {
               id: 3,
-              name: 'Memeber 3',
-              team: 'Social Media Team',
+              name: 'Maseko Kamohelo',
+              team: 'Developers Team',
               image: require('../assets/images/blog-4.png'),
               linkedin: 'https://za.linkedin.com/',
             },
             {
               id: 4,
-              name: 'Memeber 4',
-              team: 'Developer Team',
+              name: 'Tsiri Moloko',
+              team: 'Developers Team',
               image: require('../assets/images/blog-4.png'),
               linkedin: 'https://za.linkedin.com/',
             },
@@ -996,17 +888,17 @@ export default {
             
             {
               id: 5,
-              name: 'Memeber 5',
-              team: 'Corporate Partnerships Team',
-              image: require('../assets/images/blog-4.png'),
+              name: 'Pretty Mangwadi',
+              team: 'Social Media Team',
+              image: require('../assets/members/Pretty.jpg'),
               linkedin: 'https://za.linkedin.com/',
             },
 
             {
               id: 6,
-              name: 'Memeber 6',
-              team: 'Developer Team',
-              image: require('../assets/images/blog-4.png'),
+              name: 'Zainub Lorgat',
+              team: 'Social Team',
+              image: require('../assets/members/zayzay.jpg'),
               linkedin: 'https://za.linkedin.com/',
             },
             {
@@ -1023,16 +915,28 @@ export default {
               image: require('../assets/images/blog-4.png'),
               linkedin: 'https://za.linkedin.com/',
             },
+
+
+            {
+              id: 9,
+              name: 'Pretty Mangwadi',
+              team: 'Social Media Team',
+              image: require('../assets/images/blog-4.png'),
+              linkedin: 'https://za.linkedin.com/',
+            },
+
             
             ],
-
-
-
-
-            
             profiles: [],
         }
     },
+
+
+    components: {
+      partnersSection,
+  },
+
+
     methods: {
         getSlidesPerView() {
       if (window.innerWidth <= 788) {
@@ -1050,8 +954,8 @@ export default {
             else if (str == '2022') {
                 this.profiles = this.y2022;
             }
-            else if(str == '2024'){
-                this.profiles = this.y2024
+            else if(str=='2024'){
+              this.profiles=this.y2024;
             }
         }
     },
@@ -1140,4 +1044,7 @@ export default {
 
     },
 }
+
+
+
 </script>
