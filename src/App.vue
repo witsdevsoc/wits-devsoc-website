@@ -17,14 +17,14 @@
               <h3>Home</h3>
             </router-link>
             <hr>
-            <router-link :to="{ name: 'Home', hash: '#activities' }" v-on:click="revealnav(); sethome();">
+            <router-link :to="{ name: 'Home' }" v-on:click="revealnav(); sethome();">
               <h4 class="topboth4">Activities</h4>
             </router-link>
-            <router-link :to="{ name: 'Home', hash: '#workshops' }" v-on:click="revealnav(); sethome();">
+            <router-link :to="{ name: 'Home'}" v-on:click="revealnav(); sethome();">
               <h4 class="topboth4">Workshops</h4>
             </router-link>
 
-            <router-link :to="{ name: 'about-us', hash: '#about-us' }" v-on:click="revealnav(); sethome();">
+            <router-link :to="{ name: 'about-us'}" v-on:click="revealnav(); sethome();">
               <h4 class="topboth4">About Us</h4>
             </router-link>
 
@@ -39,13 +39,13 @@
               <h3>Blog</h3>
             </router-link>
             <hr>
-            <router-link v-on:click="revealnav(); setaway();" :to="{ name: 'blogs', hash: '#Events' }">
+            <router-link v-on:click="revealnav(); setaway();" :to="{ name: 'blogs'}">
               <h4 class="topboth4">Events</h4>
             </router-link>
-            <router-link v-on:click="revealnav(); setaway();" :to="{ name: 'blogs', hash: '#Workshops' }">
+            <router-link v-on:click="revealnav(); setaway();" :to="{ name: 'blogs'}">
               <h4 class="topboth4">Workshops</h4>
             </router-link>
-            <router-link v-on:click="revealnav(); setaway();" :to="{ name: 'blogs', hash: '#Tech Talks' }">
+            <router-link v-on:click="revealnav(); setaway();" :to="{ name: 'blogs' }">
               <h4 class="topboth4">Tech Talks</h4>
             </router-link>
             <hr>
