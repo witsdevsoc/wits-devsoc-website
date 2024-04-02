@@ -882,7 +882,7 @@ export default {
               name: 'Tsiri Moloko',
               team: 'Developers Team',
               image: require('../assets/images/blog-4.png'),
-              linkedin: 'https://za.linkedin.com/',
+              linkedin: 'https://za.linkedin.com/in/moloko-tsiri-161881265?trk=people-guest_people_search-card',
             },
             
             
