@@ -867,7 +867,7 @@ export default {
             {
               id: 2,
               name: 'Mohammed Huzaifah',
-              team: 'Head Developers Team',
+              team: 'Head of Developers Team',
               image: require('../assets/members/Mohammed-Huzaifah.jpg'),
               linkedin: 'http://www.linkedin.com/in/mhbangie',
             },
@@ -898,7 +898,7 @@ export default {
             {
               id: 6,
               name: 'Zainub Lorgat',
-              team: 'Social Team',
+              team: 'Social Media Team',
               image: require('../assets/members/zayzay.jpg'),
               linkedin: 'https://www.linkedin.com/in/zainablorgat/',
             },
