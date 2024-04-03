@@ -857,32 +857,33 @@ export default {
             ],
             y2024: [
             {
+              
               id: 1,
               name: 'Keren Chetty',
               team: 'Head of Society',
               image: require('../assets/members/Keren.jpeg'),
-              linkedin: 'https://za.linkedin.com/',
+              linkedin: 'https://www.linkedin.com/in/keren-chetty-48a14022b/',
             },
             {
               id: 2,
               name: 'Mohammed Huzaifah',
-              team: 'Developers Team',
+              team: 'Head Developers Team',
               image: require('../assets/members/Mohammed-Huzaifah.jpg'),
-              linkedin: 'https://za.linkedin.com/',
+              linkedin: 'http://www.linkedin.com/in/mhbangie',
             },
             {
               id: 3,
-              name: 'Maseko Kamohelo',
+              name: 'Kamogelo Khumalo',
               team: 'Developers Team',
               image: require('../assets/images/blog-4.png'),
-              linkedin: 'https://za.linkedin.com/',
+              linkedin: 'https://www.linkedin.com/in/kamogelokhumalo/',
             },
             {
               id: 4,
               name: 'Tsiri Moloko',
               team: 'Developers Team',
-              image: require('../assets/images/blog-4.png'),
-              linkedin: 'https://za.linkedin.com/in/moloko-tsiri-161881265?trk=people-guest_people_search-card',
+              image: require('../assets/members/Tsiri-Moloko.jpg'),
+              linkedin: 'https://www.linkedin.com/in/moloko-tsiri-161881265/',
             },
             
             
@@ -891,7 +892,7 @@ export default {
               name: 'Pretty Mangwadi',
               team: 'Social Media Team',
               image: require('../assets/members/Pretty.jpg'),
-              linkedin: 'https://za.linkedin.com/',
+              linkedin: 'https://www.linkedin.com/in/pretty-mangwadi-18838522a',
             },
 
             {
@@ -899,31 +900,79 @@ export default {
               name: 'Zainub Lorgat',
               team: 'Social Team',
               image: require('../assets/members/zayzay.jpg'),
-              linkedin: 'https://za.linkedin.com/',
+              linkedin: 'https://www.linkedin.com/in/zainablorgat/',
             },
             {
               id: 7,
-              name: 'Memeber 7',
+              name: 'Kayisha Naidoo',
               team: 'Social Media Team',
-              image: require('../assets/images/blog-4.png'),
-              linkedin: 'https://za.linkedin.com/',
+              image: require('../assets/members/Kayisha Naidoo.jpg'),
+              linkedin: 'https://www.linkedin.com/in/kayisha-naidoo-90a821270/',
             },
             {
               id: 8,
-              name: 'Memeber ',
-              team: 'Writing Team',
-              image: require('../assets/images/blog-4.png'),
-              linkedin: 'https://za.linkedin.com/',
+              name: 'Lubabalo Dlwathi',
+              team: 'Social Media Team',
+              image: require('../assets/members/Dlwa_up.png'),
+              linkedin: 'https://www.linkedin.com/in/lubabalo-b-dlwathi-336219202/',
             },
 
 
             {
               id: 9,
-              name: 'Pretty Mangwadi',
-              team: 'Social Media Team',
-              image: require('../assets/images/blog-4.png'),
-              linkedin: 'https://za.linkedin.com/',
+              name: 'Jessica Badiata',
+              team: 'Photographer',
+              image: require('../assets/members/Jessica_up.png'),
+              linkedin: 'http://www.linkedin.com/in/jessica-badiata-165726242',
             },
+
+            {
+              id: 10,
+              name: 'Ziyaad Ballim',
+              team: 'Corporate & Event Partnership Team ',
+              image: require('../assets/members/Ziyaad.png'),
+              linkedin: 'https://www.linkedin.com/in/ziyaad-ballim-7174481b0',
+            },
+            {
+              id: 11,
+              name: 'Kutlwano Ralehlaka',
+              team: 'Corporate & Event Partnership Team ',
+              image: require('../assets/members/Kutlwano Ralehlaka .jpg'),
+              linkedin: 'https://www.linkedin.com/in/kutlwano-ralehlaka',
+            },
+
+            {
+              id: 12,
+              name: 'Ibram Chilufya',
+              team: 'Corporate & Event Partnership Team ',
+              image: require('../assets/members/Ibram Chilufya.jpg'),
+              linkedin: 'https://www.linkedin.com/in/ibramchilufya/',
+            },
+
+            {
+              id: 13,
+              name: 'Mahdiyyah Jhetam',
+              team: 'Writing Team',
+              image: require('../assets/members/Mahdiyyah.jpg'),
+              linkedin: 'http://www.linkedin.com/in/mahdiyyah-jhetam',
+            },
+            {
+              id: 14,
+              name: 'Pramit',
+              team: 'Writing Team',
+              image: require('../assets/images/blog-4.png'),
+              linkedin: 'http://www.wits.co.za',
+            },
+            {
+              id: 15,
+              name: 'Emmanuel Azubuike',
+              team: 'Writing Team',
+              image: require('../assets/members/Emmanuel Azubuike.jpeg'),
+              linkedin: 'https://www.linkedin.com/in/emmanuel-obinna-azubuike-b39940274',
+            },
+
+
+            
 
             
             ],
