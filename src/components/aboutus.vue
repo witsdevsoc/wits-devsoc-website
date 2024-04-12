@@ -875,7 +875,7 @@ export default {
               id: 3,
               name: 'Kamogelo Khumalo',
               team: 'Developers Team',
-              image: require('../assets/images/blog-4.png'),
+              image: require('../assets/members/kamo.jpg'),
               linkedin: 'https://www.linkedin.com/in/kamogelokhumalo/',
             },
             {
@@ -956,15 +956,9 @@ export default {
               image: require('../assets/members/Mahdiyyah.jpg'),
               linkedin: 'http://www.linkedin.com/in/mahdiyyah-jhetam',
             },
+           
             {
               id: 14,
-              name: 'Pramit',
-              team: 'Writing Team',
-              image: require('../assets/images/blog-4.png'),
-              linkedin: 'http://www.wits.co.za',
-            },
-            {
-              id: 15,
               name: 'Emmanuel Azubuike',
               team: 'Writing Team',
               image: require('../assets/members/Emmanuel Azubuike.jpeg'),
