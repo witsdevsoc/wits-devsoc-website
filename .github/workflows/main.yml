@@ -17,5 +17,5 @@ jobs:
 
     - name: Connect and Pull
       run: |
-        sshpass -p sdevsoc ssh sdevsoc@${{ secrets.SSH_HOST }} "cd public_html/wits-devsoc-website && git pull origin main"
+        ssh sdevsoc@${{ secrets.SSH_HOST }} && echo sdevsoc && cd public_html/wits-devsoc-website && git pull
 
