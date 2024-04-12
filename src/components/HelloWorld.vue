@@ -1922,9 +1922,7 @@ h5 {
   align-items: start;
 }
 
-#workshops {
-  padding-top: 7.89rem;
-}
+
 
 #acts {
   display: grid;
@@ -1980,14 +1978,7 @@ body {
   box-sizing: border-box;
 }
 
-#activities {
-  background: #252542;
-  padding-top: 3.56rem;
-  height: fit-content;
-  flex-shrink: 0;
-  border-top-left-radius: 3.33333rem;
-  border-top-right-radius: 3.33333rem;
-}
+
 
 #titletext {
   color: #FFF;
