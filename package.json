@@ -16,6 +16,8 @@
   
     
   "build": "vue-cli-service build",
+
+  "deploy": "git add . && git commit -m 'deploy' && git push -f",
   
     
   "lint": "vue-cli-service lint"
@@ -49,14 +51,6 @@
   "express": "^4.18.2",
   
     
-  "firebase": "^8.6.8",
-  
-    
-  "jquery": "^3.7.0",
-  
-    
-  "mongoose": "^7.3.4",
-  
     
   "node": "^20.4.0",
   

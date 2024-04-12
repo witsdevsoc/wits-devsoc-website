@@ -4,6 +4,8 @@ import App from './App.vue';
 import '@fortawesome/fontawesome-free/css/all.css';
 
 
+
+
 import { register } from 'swiper/element/bundle';
 import router from './routes/route';
 
