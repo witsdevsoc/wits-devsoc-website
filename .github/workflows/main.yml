@@ -3,19 +3,21 @@ name: Deploy to LAMP Server
 on:
   push:
     branches:
-      - main
-  workflow_dispatch:
+      - main  # or your default branch
 
 jobs:
-  run_pull:
-    name: Run pull
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Install sshpass
-      run: sudo apt-get install -y sshpass
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-    - name: Connect and Pull
+    - name: Set up SSH
+      uses: webfactory/ssh-agent@v0.5.3
+      with:
+        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+    - name: Deploy to Server
       run: |
-        ssh sdevsoc@${{ secrets.SSH_HOST }} && echo sdevsoc && cd public_html/wits-devsoc-website && git pull
-
+        rsync -avz --delete ./ sdevsoc@lamp.ms.wits.ac.za:/public_html/
+        # Use rsync to transfer your project files. Adjust paths as necessary.
