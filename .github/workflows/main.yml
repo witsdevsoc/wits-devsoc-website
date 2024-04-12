@@ -3,21 +3,19 @@ name: Deploy to LAMP Server
 on:
   push:
     branches:
-      - main  # Adjust to your main branch name
+      - main
+  workflow_dispatch:
 
 jobs:
-  deploy:
+  run_pull:
+    name: Run pull
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+    - name: Install sshpass
+      run: sudo apt-get install -y sshpass
 
-    - name: Set up SSH key
-      uses: webfactory/ssh-agent@v0.5.3
-      with:
-        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-
-    - name: Deploy via SSH
+    - name: Connect and Pull
       run: |
-        ssh -o StrictHostKeyChecking=no -p 22 sdevsoc@${{ secrets.SSH_HOST }} "cd public_html/wits-devsoc-website && git pull"
+        sshpass -p sdevsoc ssh sdevsoc@${{ secrets.SSH_HOST }} "cd public_html/wits-devsoc-website && git pull origin main"
+
