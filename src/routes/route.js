@@ -1,8 +1,8 @@
 import { createRouter , createWebHistory } from 'vue-router';
 import HelloWorld from '../components/HelloWorld';
-import BlogPage from '../components/BlogPage.vue';
+// import BlogPage from '../components/BlogPage.vue';
 import FAQs from '../components/FAQs.vue';
-import BlogPost from '../components/BlogPost.vue';
+// import BlogPost from '../components/BlogPost.vue';
 import AboutUs from '../components/aboutus.vue';
 
 const routes = [
@@ -12,12 +12,12 @@ const routes = [
     component: HelloWorld,
     
   },
-  {
-    path: '/blogs',
-    name: 'blogs',
-    component: BlogPage,
+  // {
+  //   path: '/blogs',
+  //   name: 'blogs',
+  //   component: BlogPage,
     
-  },
+  // },
   {
     path: '/faqs',
     name: 'faqs',
@@ -29,12 +29,12 @@ const routes = [
     name: 'about-us',
     component: AboutUs,
   },
-  {
-    path: '/blogp',
-    name: 'blogp',
-    component: BlogPost,
+  // {
+  //   path: '/blogp',
+  //   name: 'blogp',
+  //   component: BlogPost,
     
-  },
+  // },
 ];
 
 const router = createRouter({

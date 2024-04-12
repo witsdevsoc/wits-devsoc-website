@@ -2324,6 +2324,13 @@ body {
 
 }
 
+#activities {
+  padding-top: 4rem;
+  border-top-left-radius: 1.11111rem;
+  border-top-right-radius: 1.11111rem;
+  background: #252542;
+}
+
 #two {
   width: 100%;
   height: fit-content;

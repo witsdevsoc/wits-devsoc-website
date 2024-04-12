@@ -511,7 +511,29 @@
         <div class="swiper-pagination"></div>
       </div>
 
-
+      <div class="swiper mySwiper" id="swip">
+    <div class="swiper-wrapper sectionnn">
+      <div class="swiper-slide" v-for="partner in partners" :key="partner.id">
+        <div :id="partner.id" class="partcontainer">
+          <img :src="partner.imgSrc" :alt="partner.name">
+          <a class="models" :href="partner.url">
+            <h1>{{ partner.name }}</h1>
+            <div class="spa">
+              <div class="viewsite">
+                <h4>View site</h4>
+                <div>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
 
 </section>
 
@@ -542,27 +564,85 @@
   data() {
     return {
       partners: [
-        { name: 'BBD', image: require('@/assets/partners/bbd.jpg'), link: 'https://bbdsoftware.com/services/software-development/?utm_source=google+search&utm_medium=cpc&utm_campaign=19744285142&utm_content=144879029925&utm_term=bbd%20software&gclid=CjwKCAjw-7OlBhB8EiwAnoOEk_PwM3BDZZTWA82g4cJEgec16t60oLo3yOdpQVTAsBaGK9U3Sf2-CBoCLqAQAvD_BwE' },
-        { name: 'Psybergate', image: require('@/assets/partners/psyb.jpg'), link: 'https://psybergate.co.za/' },
-        { name: 'adapt', image: require('@/assets/partners/adapt.png'), link: 'https://adapt.co.za/' },
-        { name: 'aws', image: require('@/assets/partners/aws.png'), link: 'https://aws.amazon.com/' },
-        { name: 'bdo', image: require('@/assets/partners/bdo.png'), link: 'https://www.bdo.co.za/' },
-        { name: 'bsgg', image: require('@/assets/partners/bsgg.jpg'), link: 'https://bsgg.net/' },
-        { name: 'dariel', image: require('@/assets/partners/dariel.jpg'), link: 'https://www.dariel.co.za/' },
-        { name: 'ente', image: require('@/assets/partners/ente.png'), link: 'https://ente.co.za/' },
-        { name: 'epiuse', image: require('@/assets/partners/epiuse.png'), link: 'https://www.epiuse.com/' },
-        { name: 'maharatemp', image: require('@/assets/partners/maharatemp.png'), link: 'https://maharatemp.com/' },
-        { name: 'moharaa', image: require('@/assets/partners/moharaa.png'), link: 'https://moharaa.com/' },
-        { name: 'mwr', image: require('@/assets/partners/mwr.jpg'), link: 'https://mwrinfosecurity.com/' },
-        { name: 'onex', image: require('@/assets/partners/onexx.png'), link: 'https://onexyazilim.com/' },
-        { name: 'psyb', image: require('@/assets/partners/psyb.jpg'), link: 'https://psyb.co.za/' },
-        { name: 'retrorab', image: require('@/assets/partners/retrorab.png'), link: 'https://retrorabbit.co.za/' },
-        { name: 'synth', image: require('@/assets/partners/synth.png'), link: 'https://www.synth.co.za/' },
-        { name: 'ydar', image: require('@/assets/partners/ydar.jpg'), link: 'https://ydar.co.za/' },
-        { name: 'yello', image: require('@/assets/partners/yello.png'), link: 'https://yellow.co.za/' },
-        { name: 'zindi', image: require('@/assets/partners/zindi.png'), link: 'https://zindi.africa/' },
-        // // Add more partner objects as needed
-      ]
+      {
+        id: 'bbdpad',
+        imgSrc: require('@/assets/partners/bbd.jpg'),
+        name: 'BBD',
+        url: 'https://bbdsoftware.com/services/software-development/?utm_source=google+search&utm_medium=cpc&utm_campaign=19744285142&utm_content=144879029925&utm_term=bbd%20software&gclid=CjwKCAjw-7OlBhB8EiwAnoOEk_PwM3BDZZTWA82g4cJEgec16t60oLo3yOdpQVTAsBaGK9U3Sf2-CBoCLqAQAvD_BwE',
+      },
+      {
+        id: 'awspad',
+        imgSrc: require('@/assets/partners/aws.png'),
+        name: 'AWS',
+        url: 'https://aws.amazon.com/',
+      },
+      {
+        id: 'epiuspad',
+        imgSrc: require('@/assets/partners/epiuse.png'),
+        name: 'Epiuse',
+        url: 'https://www.epiuse.com/',
+      },
+      {
+        id: 'bsgimg',
+        imgSrc: require('@/assets/partners/bsgg.jpg'),
+        name: 'BSG',
+        url: 'https://bsg.co.za/',
+      },
+      {
+        id: 'darpad',
+        imgSrc: require('@/assets/partners/dariel.jpg'),
+        name: 'Dariel',
+        url: 'https://www.dariel.co.za/',
+      },
+      {
+        id: 'syntpad',
+        imgSrc: require('@/assets/partners/synth.png'),
+        name: 'Synthesis',
+        url: 'https://www.synthesis.co.za/',
+      },
+      {
+        id: 'mwrpad',
+        imgSrc: require('@/assets/partners/mwr.jpg'),
+        name: 'MWR',
+        url: 'https://www.mwrcybersec.com/',
+      },
+      {
+        id: 'onexpadd',
+        imgSrc: require('@/assets/partners/onexx.png'),
+        name: '+oneX',
+        url: 'https://www.plusonex.com/',
+      },
+      {
+        id: 'moharpad',
+        imgSrc: require('@/assets/partners/moharaa.png'),
+        name: 'Mohara',
+        url: 'https://mohara.co/',
+      },
+      {
+        id: 'derpad',
+        imgSrc: require('@/assets/partners/deriv.png'),
+        name: 'Derivico',
+        url: 'https://derivco.co.za/',
+      },
+      {
+        id: 'ydrpad',
+        imgSrc: require('@/assets/partners/ydar.jpg'),
+        name: 'YDragon',
+        url: 'https://ydragon.io/',
+      },
+      {
+        id: 'yellpad',
+        imgSrc: require('@/assets/partners/yello.png'),
+        name: 'Yellow',
+        url: 'https://www.yellow.africa/',
+      },
+      {
+        id: 'zinpadd',
+        imgSrc: require('@/assets/partners/zindi.png'),
+        name: 'Zindi',
+        url: 'https://zindi.africa/',
+      },
+    ],
     };
   },
 

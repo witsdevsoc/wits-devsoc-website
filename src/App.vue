@@ -12,65 +12,50 @@
 
         <div id="horizs">
           <div class="blogopts">
-            <router-link
-              class="navtit"
-              :to="{ name: 'Home' }"
-              v-on:click="
-                revealnav();
-                sethome();
-              "
-            >
+            <router-link class="navtit" :to="{ name: 'Home' }" >
               <h3>Home</h3>
             </router-link>
             <hr>
-            <router-link :to="{ name: 'Home' }" v-on:click="revealnav(); sethome();">
+            <!-- <router-link :to="{ name: 'Home' }" v-on:click="revealnav(); sethome();">
               <h4 class="topboth4">Activities</h4>
             </router-link>
-            <router-link :to="{ name: 'Home'}" v-on:click="revealnav(); sethome();">
+            <router-link :to="{ name: 'Home' }" v-on:click="revealnav(); sethome();">
               <h4 class="topboth4">Workshops</h4>
-            </router-link>
+            </router-link> -->
 
-            <router-link :to="{ name: 'about-us'}" v-on:click="revealnav(); sethome();">
+            <router-link :to="{ name: 'about-us' }" >
               <h4 class="topboth4">About Us</h4>
             </router-link>
 
-            <router-link
-              :to="{ name: 'faqs' }"
-              v-on:click="
-                revealnav();
-                setaway();
-              "
-            >
+            <router-link :to="{ name: 'faqs' }" >
               <h4 class="topboth4">FAQs</h4>
             </router-link>
             <hr />
+            <!-- <p style="margin: 1.5rem 0;">blog page coming soon!</p> -->
           </div>
 
-          <div class="blogopts">
-            <router-link
-              :to="{ name: 'blogs' }"
-              v-on:click="
-                revealnav();
-                setaway();
-              "
-              class="navtit"
-            >
+          <!-- <div class="blogopts">
+            <router-link :to="{ name: 'blogs' }" v-on:click="
+    revealnav();
+  setaway();
+  " class="navtit">
               <h3>Blog</h3>
             </router-link>
             <hr>
-            <router-link v-on:click="revealnav(); setaway();" :to="{ name: 'blogs'}">
+            <router-link v-on:click="revealnav(); setaway();" :to="{ name: 'blogs' }">
               <h4 class="topboth4">Events</h4>
             </router-link>
-            <router-link v-on:click="revealnav(); setaway();" :to="{ name: 'blogs'}">
+            <router-link v-on:click="revealnav(); setaway();" :to="{ name: 'blogs' }">
               <h4 class="topboth4">Workshops</h4>
             </router-link>
             <router-link v-on:click="revealnav(); setaway();" :to="{ name: 'blogs' }">
               <h4 class="topboth4">Tech Talks</h4>
             </router-link>
             <hr />
-          </div>
+          </div> -->
         </div>
-        <hr />
+        <p >blog page coming soon :)</p>
+        <!-- <hr /> -->
       </div>
     </div>
   </section>
@@ -96,19 +81,11 @@
         </div>
 
         <div class="social">
-          <a class="socials" href="https://www.facebook.com/witsdevsoc/"
-            ><img src="./assets/facebook.png" alt=""
-          /></a>
-          <a
-            class="socials"
-            href="https://www.instagram.com/witsdevsoc/?utm_medium=copy_link"
-            ><img src="./assets/instagram.png" alt=""
-          /></a>
-          <a
-            class="socials"
-            href="https://www.linkedin.com/company/wits-developer-society"
-            ><img src="./assets/linkedin.png" alt=""
-          /></a>
+          <a class="socials" href="https://www.facebook.com/witsdevsoc/"><img src="./assets/facebook.png" alt="" /></a>
+          <a class="socials" href="https://www.instagram.com/witsdevsoc/?utm_medium=copy_link"><img
+              src="./assets/instagram.png" alt="" /></a>
+          <a class="socials" href="https://www.linkedin.com/company/wits-developer-society"><img
+              src="./assets/linkedin.png" alt="" /></a>
           <a class="socials" href="https://discord.gg/QjphB5N6NC">
             <!-- <div>
                     <div><img src="./assets/discord.png" alt=""></div>
@@ -135,11 +112,12 @@
 
     <section :style="{ background: finalhome }" id="final">
       <div>
-        <h4 id="fin1">Have questions? Email us at <a :href="'mailto:witsdevsoc@gmail.com?cc=' + encodeURIComponent('mhbangie@gmail.com') + '&subject=' + encodeURIComponent('Enquiry') + '&body=' + encodeURIComponent('Hi there,')" >witsdevsoc@gmail.com</a></h4>
+        <h4 id="fin1">Have questions? Email us at <a id="emaill"
+            :href="'mailto:witsdevsoc@gmail.com?cc=' + encodeURIComponent('mhbangie@gmail.com') + '&subject=' + encodeURIComponent('Enquiry') + '&body=' + encodeURIComponent('Hi there,')">witsdevsoc@gmail.com</a>
+        </h4>
       </div>
       <a id="backtatop" v-on:click="goToTopOfPage()">
-        <i class="fa fa-arrow-up" aria-hidden="true"></i
-      ></a>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i></a>
     </section>
   </div>
 
@@ -301,19 +279,20 @@ export default {
 
 #horizs {
   width: 100%;
+  height: 100%;
   padding: 0rem 3rem;
 }
 
 #cent {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   width: 100%;
+  height: 100%;
   color: #fff;
   text-decoration: none;
   text-align: center;
-  height: fit-content;
 }
 
 #cent a {
@@ -355,7 +334,7 @@ export default {
   align-items: end;
   width: 35rem;
   transform: translateX(0rem);
-  padding-bottom: 4.5rem;
+  padding-bottom: 1rem;
   border-radius: 1.66667rem;
   background: #171729;
   animation: translateinfromright 0.4s linear;
@@ -796,5 +775,9 @@ html {
     padding-right: 1.5rem;
     padding-top: 1.5rem;
   }
+}
+
+#emaill {
+  color: #5caff9;
 }
 </style>

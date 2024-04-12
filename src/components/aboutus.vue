@@ -74,7 +74,7 @@
           </section>
 
         <div>
-           <partnersSection />
+           <!-- <partnersSection /> -->
         </div>
 
 
@@ -263,7 +263,20 @@ h6 {
   border-top-right-radius: 3.33333rem;
 }
 
+@media (max-width: 1215px) {
+    #kudu {
+    width: 30rem;
+    height: 10rem;
+  }
+}
 
+@media (max-width: 788px) {
+    #kudu {
+    width: 23rem;
+    height: 7rem;
+  }
+
+}
 /* #parthead {
   display: flex;
   width: 100%;
@@ -618,7 +631,7 @@ h6 {
 <script>
 
 import Swiper from 'swiper';
-import partnersSection from './partners.vue';
+// import partnersSection from './partners.vue';
 export default {
     name: 'about-us',
     data() {
@@ -875,7 +888,7 @@ export default {
               id: 3,
               name: 'Kamogelo Khumalo',
               team: 'Developers Team',
-              image: require('../assets/members/kamo.jpg'),
+              image: require('../assets/members/Kamo.jpg'),
               linkedin: 'https://www.linkedin.com/in/kamogelokhumalo/',
             },
             {
@@ -975,9 +988,9 @@ export default {
     },
 
 
-    components: {
-      partnersSection,
-  },
+//     components: {
+//       partnersSection,
+//   },
 
 
     methods: {

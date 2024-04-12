@@ -769,7 +769,7 @@ header .btn-group {
  */
 
     --background-primary: #172D4E;
-    --background-secondary: #171729;
+    --background-secondary: #070708;
 
     --action-primary: #5CAFF9;
     --action-secondary: #5CAFF9;
