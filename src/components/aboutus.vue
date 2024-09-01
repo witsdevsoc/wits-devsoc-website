@@ -881,7 +881,7 @@ export default {
               id: 2,
               name: 'Mohammed Huzaifah',
               team: 'Head of Developers Team',
-              image: require('../assets/members/Mohammed-Huzaifah.jpg'),
+              image: require('../assets/members/Mohammed.jpg'),
               linkedin: 'http://www.linkedin.com/in/mhbangie',
             },
             {
